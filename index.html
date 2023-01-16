@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="coderell" content="width=device-width, initial-scale=1.0">
+    <title>Summer Animated Website Landing Page Example #2 | Crimson</title>
+    <!-- CSS ========================= -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ion-icon ========================= -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!-- TweenMax GSAP  ========================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="background"></div>
+
+        <div class="nav">
+            <div class="logo">
+                <ion-icon name="play"></ion-icon>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Products</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="cart">
+                <ion-icon name="cart"></ion-icon>
+            </div>
+        </div>
+
+        <div class="hero">
+            <img src="feature-img.png" alt="">
+        </div>
+
+        <div class="blocks">
+            <div class="block-1">0</div>
+            <div class="block-1">1</div>
+        </div>
+
+        <div class="tag-line">
+            <span>Grab Your Summer,<br>Collection......*/</span>
+        </div>
+
+        <div class="year">2 0 2 2 *</div>
+
+        <div class="title">
+            <div class="title-container">
+                <div class="title-item">S</div>
+                <div class="title-item">U</div>
+                <div class="title-item">M</div>
+                <div class="title-item">M</div>
+                <div class="title-item">E</div>
+                <div class="title-item">R</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>A fashion insight into leading summer styles, travel destinations<br> to may never of thought of , a beginners guide to S&M and more
+            </p>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="media">
+            <ul>
+                <li>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        TweenMax.to(".background", 2, {
+            width: "100%",
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".nav", 1.5, {
+            delay: 1.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".blocks", 1.5, {
+            delay: 1.6,
+            opacity: 0,
+            x: -60,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".tag-line", 1.5, {
+            delay: 2,
+            opacity: 0,
+            x: -80,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".hero", 2, {
+            delay: 3,
+            opacity: 0,
+            x: 170,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".title-container > div", 3, {
+            delay: 4.4,
+            y: "500",
+            ease: Elastic.easeOut.config(2, 0.4)
+        }, 0.2)
+
+        TweenMax.from(".year", 1.5, {
+            delay: 6.2,
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".content p", 2, {
+            delay: 7,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".content button", 2, {
+            delay: 7.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".media ul li", 1.5, {
+            delay: 9,
+            opacity: 0,
+            x: -30,
+            ease: Expo.easeInOut
+        }, 0.08)
+    </script>
+</body>
+
+</html>
